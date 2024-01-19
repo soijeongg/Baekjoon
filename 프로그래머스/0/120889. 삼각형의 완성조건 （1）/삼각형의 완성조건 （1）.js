@@ -9,8 +9,7 @@ function solution(sides) {
     }else{
         answer=2;
     }
-    //3개의 값이 들어있는 배열이 주어진다 가장 긴 변의 길이는 다른 두변의 길이합보다 작아야 한다
-    //이것도 같은 값이 나올 수 있겠다
+
     
     return answer;
 }
