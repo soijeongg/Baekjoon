@@ -1,0 +1,3 @@
+--   이름이 있는 동물의 ID를 조회하는 SQL 문을 작성해주세요. 단, ID는 오름차순 정렬
+SELECT ANIMAL_ID from ANIMAL_INS
+where name is not null
