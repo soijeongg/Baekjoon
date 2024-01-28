@@ -1,15 +1,9 @@
---  2022년 10월 16일에 대여 중인 자동차인 경우 '대여중' 이라고 표시 대여 중이지 않은 자동차인 경우 '대여 가능'을 표시 AVAILABILITY
---  자동차 ID와 AVAILABILITY 리스트를 출력하는 SQL문을 작성
-SELECT
-CAR_ID,
-CASE WHEN CAR_ID IN (
-    SELECT CAR_ID
-    FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
-    WHERE START_DATE <= "2022-10-16" AND END_DATE >= "2022-10-16"
-    GROUP BY CAR_ID
-    ) THEN "대여중"
-    ELSE "대여 가능"
-    END AVAILABILITY
-FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
-GROUP BY CAR_ID
-ORDER BY CAR_ID DESC;
+
+SELECT car_id,
+       CASE WHEN '2022-10-16' BETWEEN start_date AND end_date 
+            THEN '대여중'
+            ELSE '대여 가능' END AS AVAILABILITY
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY 
+WHERE end_date >= '2022-10-16'
+GROUP BY 1
+ORDER BY car_id DESC;
