@@ -1,6 +1,6 @@
 # [level 3] 헤비 유저가 소유한 장소 - 77487 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77487#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77487) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@ Empty
 
 ### 제출 일자
 
-2024년 1월 0일 10:19:15
+2024년 1월 0일 21:4:12
 
 ### 문제 설명
 
