@@ -7,5 +7,5 @@ concat(SUBSTRING(TLNO from 1 for 3),"-",SUBSTRING(TLNO from 4 for 4),"-",SUBSTRI
 from USED_GOODS_USER u
 inner join USED_GOODS_BOARD d
 on u.USER_ID = d.WRITER_ID
-where USER_ID  in (select WRITER_ID from  USED_GOODS_BOARD  group by WRITER_ID having count(WRITER_ID)>=3)
+ group by WRITER_ID having count(WRITER_ID)>=3
 order by USER_ID desc
