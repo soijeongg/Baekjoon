@@ -4,6 +4,4 @@
 -- 이거 in으로 
 SELECT CART_ID
 FROM CART_PRODUCTS
-WHERE name IN ('Milk', 'Yogurt')
-GROUP BY CART_ID
-HAVING COUNT(DISTINCT name) = 2;
+WHERE name IN ('Milk') and CART_ID in (select CART_ID from CART_PRODUCTS where name in('Yogurt') )
