@@ -11,5 +11,5 @@ function solution(absolutes, signs) {
         answer+=absolutes[i]
      }
     return answer;
-    //absolutes이고sign이 부호 (T면 + F면 -)
+ 
 }
