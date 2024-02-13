@@ -3,7 +3,7 @@ function solution(arr) {
     let real = arr.slice().sort((a,b)=> a-b); //오름자순으로 정렬 
     real = real.shift();
    
-    let ss = arr.filter(index => index !==real);
+    let ss = arr.filter(e => e !==real);
     if(ss.length ==0){
         ss.push(-1);
     }
