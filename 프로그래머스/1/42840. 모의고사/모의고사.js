@@ -3,9 +3,9 @@ function solution(answers) {
     var answerp2 = 0;
     var answerp3 = 0;
     let score = [];
-   let p1 = Array.from({ length: answers.length }, (_, index) => [1, 2, 3, 4, 5][index % 5]);
-    let p2 = Array.from({ length: answers.length }, (_, index) => [2, 1, 2, 3, 2, 4, 2, 5][index % 8]);
-    let p3 = Array.from({ length: answers.length }, (_, index) => [3, 3, 1, 1, 2, 2, 4, 4, 5, 5][index % 10]);
+   let p1 = Array.from(Array( answers.length ), (_, index) => [1, 2, 3, 4, 5][index % 5]);
+    let p2 = Array.from(Array( answers.length ), (_, index) => [2, 1, 2, 3, 2, 4, 2, 5][index % 8]);
+    let p3 = Array.from(Array( answers.length ), (_, index) => [3, 3, 1, 1, 2, 2, 4, 4, 5, 5][index % 10]);
    for(let i=0;i<answers.length;i++){
        if(answers[i] ==p1[i]){
            answerp1++
