@@ -1,7 +1,7 @@
 function solution(arr, divisor) {
     var answer = [];
    answer =  arr.filter(element =>element%divisor==0);
-    if(answer==""){
+    if(answer ==0){
         answer =[-1]
     };
     answer.sort(function(a, b) {
