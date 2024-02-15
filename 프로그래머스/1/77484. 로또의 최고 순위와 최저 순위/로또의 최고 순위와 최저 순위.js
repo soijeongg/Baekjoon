@@ -3,19 +3,17 @@ function solution(lottos, win_nums) {
     let count_0 =0;
     let match_num = 0;
     let win ={6:1,5:2,4:3,3:4,2:5,1:6,0:6}
-    lottos.forEach((e=>e==0?count_0++:0))
+    lottos.forEach((e=>e==0?count_0++:0)) //0의 갯수 세기
     //이제 맞는지를 찾아보자 
     for(let i=0;i<lottos.length;i++){
         if(win_nums.includes(lottos[i])){
             match_num++
         }
-         
+         //처음에는 인덱스까지 맞혀야 하는지 알았는지 있으면 올라가는거라서
+        //for문을 돌려 로또의 i가 win_nums에 있는지 확인 있으면 맞춘거 올리기
+        //최고 0인거 +맞춘거 /최저 맞춘거만
+        //이걸 만들어놓은 맞은거:순위인 객체에 넣어 확인
     }
-    let real = [win[match_num+count_0],win[match_num]]
-    return real;
+    let reala = [win[match_num+count_0],win[match_num]]
+    return reala;
 }
-//로또 1부터 45까지에서 숫자 6개를 찍어서 번호와 위치가 맞으면 됨
-//근데 못알아보는 숫자가 있어서 못알아보는 숫자를 0으로 만들었다
-//근데 내가 할수 있었던 최고점수와 최저점수를 알고 싶어
-//근데 최고 점수는 그 0이였던게 전부 다 맞았을때(0의갯수+맞은개수)
-//최저점수는 0이였던게 전부 틀렸을때 그냥 원래 맞은 개수만 나오게 
