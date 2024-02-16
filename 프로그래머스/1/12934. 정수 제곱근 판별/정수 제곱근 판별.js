@@ -1,5 +1,6 @@
 function solution(n) {
-    var answer = Math.sqrt(n)%1==0? (Math.sqrt(n)+1)**2:-1
+    var answer = parseInt(Math.sqrt(n))== Math.sqrt(n)? 
+        (Math.sqrt(n)+1)**2:-1
     
-    return answer;
+    return answer
 }
