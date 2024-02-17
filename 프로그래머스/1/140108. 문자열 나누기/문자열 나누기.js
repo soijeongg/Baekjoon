@@ -2,10 +2,10 @@ function solution(s) {
     var answer = [];
     while (s.length > 0) {
         let x = s[0]; // 첫 글자를 x로 지정
-        let xCount = 1; // x의 출현 횟수
+        let xCount = 0; // x의 출현 횟수
         let other = 0; // x가 아닌 다른 글자의 출현 횟수
         
-        for (let i = 1; i < s.length; i++) {
+        for (let i = 0; i < s.length; i++) {
             if (s[i] === x) {
                 xCount++;
             } else {
