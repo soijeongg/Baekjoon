@@ -3,13 +3,13 @@ function solution(A, B) {
         return 0
     }
 
-    for (let i = 0; i < A.length; i++) {
+    for (let i = 1; i < A.length; i++) {
         // 문자열 A의 마지막 문자를 맨 앞으로 이동
         A = A.slice(-1) + A.slice(0, -1);
 
        
         if (A === B) {
-            return i + 1; 
+            return i ; 
         }
     }
 
