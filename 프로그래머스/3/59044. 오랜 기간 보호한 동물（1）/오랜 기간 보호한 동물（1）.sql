@@ -2,7 +2,7 @@
 --  보호 시작일 순으로 조회
 SELECT i.NAME,i.DATETIME
 from ANIMAL_INS i
-left outer join ANIMAL_OUTS o
+left  join ANIMAL_OUTS o
 ON i.ANIMAL_ID = o.ANIMAL_ID
 where o.ANIMAL_ID is null
 order by i.DATETIME asc
